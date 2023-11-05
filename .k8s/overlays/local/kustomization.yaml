@@ -1,0 +1,7 @@
+patches:
+  - target:
+      kind: ConfigMap
+    path: db/configmap.yaml
+  - target:
+      kind: StatefulSet
+    path: db/statefulset.yaml
