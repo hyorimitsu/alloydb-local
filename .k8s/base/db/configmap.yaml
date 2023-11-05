@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: alloydb-config
+  namespace: alloydb
+  labels:
+    app: alloydb-config

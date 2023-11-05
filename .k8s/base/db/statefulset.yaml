@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: alloydb
+  namespace: alloydb
+  labels:
+    app: alloydb
+spec:
+  ports:
+    - port: 5432
+  selector:
+    app: alloydb
+  clusterIP: None
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: alloydb
+  namespace: alloydb
+  labels:
+    app: alloydb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: alloydb
+  template:
+    metadata:
+      name: alloydb
+      labels:
+        app: alloydb
+    spec:
+      containers:
+        - name: alloydb
+          ports:
+            - containerPort: 5432
+          envFrom:
+            - configMapRef:
+                name: alloydb-config
