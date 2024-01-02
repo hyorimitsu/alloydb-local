@@ -1,4 +1,0 @@
-resources:
-  - namespace.yaml
-  - db/statefulset.yaml
-  - db/configmap.yaml
