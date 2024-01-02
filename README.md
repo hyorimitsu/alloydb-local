@@ -1,14 +1,14 @@
 AlloyDB Local
 ---
 
-This is a tool for easily and quickly building AlloyDB.
+This is a tool for easily and quickly building [AlloyDB](https://cloud.google.com/alloydb/docs/overview).
 
 ## Description
 
-This tool uses Vagrant to build AlloyDB.
+This tool uses Vagrant to build [AlloyDB](https://cloud.google.com/alloydb/docs/overview).
 All necessary tools are installed within the VM, allowing for easy and quick construction.
 
-Note: This is intended for use as a local development environment. Do not use in a production environment.
+**Note: This is intended for use as a local development environment. Do not use in a production environment.**
 
 ## Usage
 
